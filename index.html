@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="form-group">
+                <h1 id="title">Form</h1>
+                <p id="description">DOM Manipulation with forms</p>
+                <label>First Name</label><input type="text" id="first-name" placeholder="Enter First Name" required>
+                <label>Last Name</label><input type="text" id="last-name" placeholder="Enter Last Name" required>
+                <label>Address</label><textarea row="3" cols="30" id="address" name="address" placeholder="Enter Address"></textarea>
+                <label>Pincode</label><input type="text" id="pincode" required placeholder="Enter Pincode">
+                <label>Gender</label>
+                <input type="radio" class="gender" name="gender" checked><span>Male</span>
+                <input type="radio" class="gender" name="gender"><span>Femle</span>
+                <input type="radio" class="gender" name="gender"><span>Other</span>
+                <label>Choice of foods</label>
+                <input type="checkbox" name="chk" class="checkbox" checked onclick="my_func()"><span>Chinese</span>
+                <input type="checkbox" name="chk" class="checkbox" checked onclick="my_func()"><span>Pizza</span>
+                <input type="checkbox" name="chk" class="checkbox" onclick="my_func()"><span>Burger</span>
+                <input type="checkbox" name="chk" class="checkbox" onclick="my_func()"><span>Momo</label>
+                <input type="checkbox" name="chk" class="checkbox" onclick="my_func()"><span>Sandwhich</span>
+                <div><span id="notvalid" style="color:red"></span></div>
+                <label>State</label><input type="text" id="state">
+                <label>Country</label><input type="text" id="country"><br>
+                <button  type="submit" value="Submit" id="submit" class="btn btn-primary">Submit</button>
+                <!-- <button id="clear">Clear</button> -->
+            </div>
+        </form>
+        <div>
+            <table cellspacing="10" cellspading="10" id="table_information" class="table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address</th>
+                        <th>Pincode</th>
+                        <th>Gender</th>
+                        <th>Food</th>
+                        <th>State</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
